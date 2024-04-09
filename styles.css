@@ -1,0 +1,261 @@
+/* Start Global Rules */
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+.container {
+	width: min(1000px, 100%);
+	padding: 2rem 1rem;
+	margin: 0 auto;
+}
+
+:root {
+	--gray: #efefef;
+}
+
+body {
+	font-family: 'Times New Roman', Times, serif, sans-serif;
+	color: #06413D;
+	background-color: var(--gray);
+}
+
+/* End Global Rules */
+
+
+
+/* Start Header */
+header {
+	position: fixed;
+	width: 100vw;
+	background-color: #efd9cc;
+	box-shadow: 0 0 .6rem rgba(0, 0, 0, 0.2);
+	z-index: 99;
+}
+
+header .container {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+header h1 {
+	font-size: clamp(32px, 5vw, 2.8rem);
+	font-weight: 900;
+}
+
+header h1 a {
+	text-decoration: none;
+	color: #06413D;
+}
+
+header .open-modal {
+	position: relative;
+	flex-shrink: 0;
+	width: 32px;
+	height: 32px;
+	cursor: pointer;
+}
+
+header .open-modal span {
+	position: absolute;
+	top: 50%;
+	background-color: #06413D;
+	width: 100%;
+	height: 4px;
+	border-radius: 1rem;
+}
+
+header .open-modal span:first-child {
+	transform: translateY(-50%);
+}
+
+header .open-modal span:last-child {
+	transform: translateY(-50%) rotate(90deg);
+}
+/* End Header */
+
+
+
+/* Start Bookshelf */
+.bookshelf {
+	position: relative;
+	top: 118px;
+}
+
+.bookshelf h1 {
+	font-size: 2rem;
+	font-weight: 600;
+	margin-bottom: 1rem;
+}
+
+/* .bookshelf .grid{
+	display: grid;
+	gap: 1rem;
+	grid-template-columns: repeat(auto-fit, 312px);
+	justify-content: center;
+} */
+.bookshelf .grid {
+  display: grid; /* Makes the element a grid container */
+  gap: 1rem; /* Adds spacing between grid items (1rem) */
+  grid-template-columns: repeat(5, 1fr); /* Defines 5 columns of equal size */
+}
+
+.bookshelf .container {
+  width: 80%; /* Adjust the width as needed (e.g., 80%) */
+  margin: 0 auto; /* Centers the container horizontally */
+}
+
+.bookshelf .card {
+	position: relative;
+	background-color: #ddd;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: top top;
+	box-shadow: 0 4px .6rem rgba(0, 0, 0, 0.1);
+	min-height: 360px;
+	border-radius: 1rem;
+	transition: .3s box-shadow;
+}
+
+.bookshelf .card:hover {
+	box-shadow: 0 4px .8rem rgba(0, 0, 0, 0.2);
+}
+
+.bookshelf .card .book-details {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	position: absolute;
+	bottom: 0;
+	padding: 1rem;
+	background-color: #efd9cc;
+	height: 50%;
+	width: 100%;
+	border-radius: 1rem;
+}
+
+.bookshelf .card .book-details p:first-child {
+	font-weight: 600;
+	font-size: 1.1rem;
+	margin-bottom: .4rem;
+}
+
+.bookshelf .card .book-details .read {
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+	gap: .4rem;
+}
+
+.bookshelf .card .book-details .read > label {
+	font-weight: 600;
+	user-select: none;
+}
+
+.bookshelf .card .book-details .read > input {
+	height: 1.1rem;
+	width: 1.1rem;
+	display: inline-block;
+}
+/* Start Bookshelf */
+
+
+
+/* Start Adding A Book Modal */
+.modal {
+	display: none;
+	justify-content: center;
+	align-items: center;
+	position: fixed;
+	top: 0;
+	left: 0;
+	background-color: rgba(0, 0, 0, 0.1);
+	width: 100vw;
+	height: 100vh;
+	z-index: 999;
+}
+
+.modal .close-modal {
+	position: absolute;
+	top: 1rem;
+	right: 1rem;
+	flex-shrink: 0;
+	width: 32px;
+	height: 32px;
+	cursor: pointer;
+	transform: rotate(45deg);
+}
+
+.modal .close-modal span {
+	position: absolute;
+	top: 50%;
+	background-color: var(--black);
+	width: 100%;
+	height: 4px;
+	border-radius: 1rem;
+}
+
+.modal .close-modal span:first-child {
+	transform: translateY(-50%);
+}
+
+.modal .close-modal span:last-child {
+	transform: translateY(-50%) rotate(90deg);
+}
+
+.modal form {
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	gap: 1rem;
+	background-color: #efd9cc;
+	padding: 4rem 2rem 2rem;
+	width: min(400px, 100%);
+	box-shadow: 0 0 1rem rgba(0, 0, 0, 0.2);
+	border-radius: 1rem;
+}
+
+.modal form h2 {
+	margin-bottom: .5rem;
+	font-weight: 600;
+}
+
+.modal form .row {
+	display: flex;
+	flex-direction: column;
+	gap: .2rem;
+}
+
+.modal form .row label {
+	font-size: 1.1rem;
+}
+
+.modal form .row input {
+	font-size: 1.1rem;
+	padding: .2rem;
+}
+
+.modal form .row button {
+	font-size: 1.1rem;
+	font-weight: 600;
+	color: var(--gray);
+	background-color: #06413D;
+	border: none;
+	padding: .6rem;
+	cursor: pointer;
+}
+
+.modal form div:nth-child(7) > div {
+	display: flex;
+	align-items: center;
+	gap: .4rem;
+}
+
+.modal form div:nth-child(7) > div input[type=checkbox] {
+	height: 1.1rem;
+	width: 1.1rem;
+}
+
+/* End Adding A Book Modal */

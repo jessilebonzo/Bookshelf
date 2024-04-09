@@ -1,0 +1,619 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>My Bookshelf</title>
+		<!-- Fonts -->
+		<link rel="preconnect" href="https://fonts.timesnewroman.net">
+		<link href="https://fonts.bunny.net/css?family=timesnewroman:400,600,900" rel="stylesheet" />
+		<!-- CSS Stylesheets -->
+		<link href="styles.css" rel="stylesheet">
+	</head>
+	<body>
+		<header>
+			<div class="container">
+				<h1><a href="index.html">bookshelf <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 18 18"><title>book-open</title><g fill="#06413d"><path d="M9,15.051c.17,0,.339-.045,.494-.134,.643-.371,1.732-.847,3.141-.845,.899,.001,1.667,.197,2.27,.435,.648,.255,1.344-.24,1.344-.937V4.487c0-.354-.181-.68-.486-.86-.637-.376-1.726-.863-3.14-.863-1.89,0-3.198,.872-3.624,1.182" fill="none" stroke="#06413d" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"></path><path d="M9,15.051c-.17,0-.339-.045-.494-.134-.643-.371-1.732-.847-3.141-.845-.899,.001-1.667,.197-2.27,.435-.648,.255-1.344-.237-1.344-.933,0-2.593,0-7.472,0-9.09,0-.354,.181-.676,.486-.856,.637-.376,1.726-.863,3.14-.863,1.89,0,3.198,.872,3.624,1.182h0s0,11.104,0,11.104Z" fill="none" stroke="#06413d" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"></path></g></svg></a></h1>
+				<div class="open-modal" id="open-modal">
+					<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 18 18"><title>square-plus</title><g fill="#06413d"><path d="M13.25,2H4.75c-1.517,0-2.75,1.233-2.75,2.75V13.25c0,1.517,1.233,2.75,2.75,2.75H13.25c1.517,0,2.75-1.233,2.75-2.75V4.75c0-1.517-1.233-2.75-2.75-2.75Zm-1,7.75h-2.5v2.5c0,.414-.336,.75-.75,.75s-.75-.336-.75-.75v-2.5h-2.5c-.414,0-.75-.336-.75-.75s.336-.75,.75-.75h2.5v-2.5c0-.414,.336-.75,.75-.75s.75,.336,.75,.75v2.5h2.5c.414,0,.75,.336,.75,.75s-.336,.75-.75,.75Z" fill="#06413d"></path></g></svg>
+				</div>
+			</div>
+		</header>
+		<section class="bookshelf">
+			<div class="container">
+				<h1>Books that pique my interest:</h1>
+				<div class="grid">
+					<div class="card" style="background-image: url('assets/friends.jpg');">
+						<div class="book-details">
+							<div>
+								<p>How to Win Friends & Influence People</p>
+								<p>Dale Carnegie</p>
+								<p>Self-help book</p>
+								<p>"To be interesting, be interested."</p>
+								<p>320</p>
+							</div>
+							<div class="read">
+								<input type="checkbox">
+								<label>Read</label>
+							</div>
+						</div>
+					</div>
+					<div class="card" style="background-image: url('assets/linchpin-1.jpg');">
+						<div class="book-details">
+							<div>
+								<p>Linchpin</p>
+								<p>Seth Godin</p>
+								<p>Self-help book</p>
+								<p>"At the age of four, you were an artist. And at seven, you were a poet."</p>
+								<p>256</p>
+							</div>
+							<div class="read">
+								<input type="checkbox">
+								<label>Read</label>
+							</div>
+						</div>
+					</div>
+					<div class="card" style="background-image: url('assets/war.jpg');">
+						<div class="book-details">
+							<div>
+								<p>The War of the Worlds (Collins Classics)</p>
+								<p>H.G. Wells</p>
+								<p>Science-fiction Classic</p>
+								<p>"We were the architects of our own destruction."</p>
+								<p>224</p>
+							</div>
+							<div class="read">
+								<input type="checkbox">
+								<label>Read</label>
+							</div>
+						</div>
+					</div>
+					<div class="card" style="background-image: url('assets/stillness.jpg');">
+						<div class="book-details">
+							<div>
+								<p>Stillness Is the Key</p>
+								<p>Ryan Holiday</p>
+								<p>Self-help book</p>
+								<p>"enough is a beautiful thing"</p>
+								<p>288</p>
+							</div>
+							<div class="read">
+								<input type="checkbox">
+								<label>Read</label>
+							</div>
+						</div>
+					</div>
+					<div class="card" style="background-image: url('assets/ego-is-the-enemy.jpg');">
+						<div class="book-details">
+							<div>
+								<p>Ego Is the Enemy</p>
+								<p>Ryan Holiday</p>
+								<p>Self-help book</p>
+								<p>"Impressing people is utterly different from being truly impressive."</p>
+								<p>256</p>
+							</div>
+							<div class="read">
+								<input type="checkbox">
+								<label>Read</label>
+							</div>
+						</div>
+					</div>
+					<div class="card" style="background-image: url('assets/dailystoic.jpg');">
+						<div class="book-details">
+							<div>
+								<p>The Daily Stoic</p>
+								<p>Ryan Holiday</p>
+								<p>Self-help book</p>
+								<p>"What we desire makes us vulnerable."</p>
+								<p>416</p>
+							</div>
+							<div class="read">
+								<input type="checkbox">
+								<label>Read</label>
+							</div>
+						</div>
+					</div>
+					<div class="card" style="background-image: url('assets/eleven.jpg');">
+						<div class="book-details">
+							<div>
+								<p>Eleven Minutes</p>
+								<p>Paulo Coelho</p>
+								<p>Novel</p>
+								<p>"Now that she had nothing to lose, she was free."</p>
+								<p>304</p>
+							</div>
+							<div class="read">
+								<input type="checkbox">
+								<label>Read</label>
+							</div>
+						</div>
+					</div>
+					<div class="card" style="background-image: url('assets/healing.jpg');">
+						<div class="book-details">
+							<div>
+								<p>Healing Through Words</p>
+								<p>Rupi Kaur</p>
+								<p>Self-help book</p>
+								<p>"Loneliness is a sign you are in desperate need of yourself."</p>
+								<p>320</p>
+							</div>
+							<div class="read">
+								<input type="checkbox">
+								<label>Read</label>
+							</div>
+						</div>
+					</div>
+					<div class="card" style="background-image: url('assets/sad.jpg');">
+						<div class="book-details">
+							<div>
+								<p>Sad Girls</p>
+								<p>Lang Leav</p>
+								<p>Novel</p>
+								<p>"I'm a stranger in my own life."</p>
+								<p>368</p>
+							</div>
+							<div class="read">
+								<input type="checkbox">
+								<label>Read</label>
+							</div>
+						</div>
+					</div>
+					<div class="card" style="background-image: url('assets/emeralds.jpg');">
+						<div class="book-details">
+							<div>
+								<p>Others Were Emeralds</p>
+								<p>Lang Leav</p>
+								<p>Novel</p>
+								<p>"In that moment, I loved them so much that it already felt like loss."</p>
+								<p>288</p>
+							</div>
+							<div class="read">
+								<input type="checkbox">
+								<label>Read</label>
+							</div>
+						</div>
+					</div>
+					<div class="card" style="background-image: url('assets/veronika.jpg');">
+						<div class="book-details">
+							<div>
+								<p>Veronika Decides to Die</p>
+								<p>Paulo Coelho</p>
+								<p>Novel</p>
+								<p>"Nothing in this world happens by chance."</p>
+								<p>208</p>
+							</div>
+							<div class="read">
+								<input type="checkbox" checked="">
+								<label>Read</label>
+							</div>
+						</div></div>
+						<div class="card" style="background-image: url('assets/love.jpg');">
+							<div class="book-details">
+								<div>
+									<p>Love & Misadventure</p>
+									<p>Lang Leav</p>
+									<p>Novel and Poetry</p>
+									<p>"Their purpose isn't to save you but to show you how to save yourself."</p>
+									<p>176</p>
+								</div>
+								<div class="read">
+									<input type="checkbox" checked="">
+									<label>Read</label>
+								</div>
+							</div></div>
+							<div class="card" style="background-image: url('assets/sea.jpg');">
+								<div class="book-details">
+									<div>
+										<p>Sea of Strangers</p>
+										<p>Lang Leav</p>
+										<p>Poetry and Fiction</p>
+										<p>"Nothing will ever be as beautiful, but neither will anything hurt as much."</p>
+										<p>224</p>
+									</div>
+									<div class="read">
+										<input type="checkbox" checked="">
+										<label>Read</label>
+									</div>
+								</div></div>
+					<div class="card" style="background-image: url('assets/idiots.jpg');">
+						<div class="book-details">
+							<div>
+								<p>Surrounded by Idiots</p>
+								<p>Thomas Erikson</p>
+								<p>Self-help book</p>
+								<p>"Only Dead Fish Go with the Flow."</p>
+								<p>304</p>
+							</div>
+							<div class="read">
+								<input type="checkbox" checked="">
+								<label>Read</label>
+							</div>
+						</div></div>
+						<div class="card" style="background-image: url('assets/the-book-of-ichigo-ichie.jpg');">
+							<div class="book-details">
+								<div>
+									<p>Ichigo Ichie</p>
+									<p>Héctor García and Francesc Miralles</p>
+									<p>Self-help book</p>
+									<p>"If you don’t like reality, create another where you can live."</p>
+									<p>208</p>
+								</div>
+								<div class="read">
+									<input type="checkbox" checked="">
+									<label>Read</label>
+								</div>
+							</div></div>
+					<div class="card" style="background-image: url('assets/atomic-habits.jpg');">
+						<div class="book-details">
+							<div>
+								<p>Atomic Habits</p>
+								<p>James Clear</p>
+								<p>Self-help book</p>
+								<p>"A genius is not born, but is educated and trained."</p>
+								<p>320</p>
+							</div>
+							<div class="read">
+								<input type="checkbox" checked="">
+								<label>Read</label>
+							</div>
+						</div></div>
+					<div class="card" style="background-image: url(assets/ikigai.jpg);"><div class="book-details">
+						<div>
+							<p>Ikigai</p>
+							<p>Francesc Miralles and Hector Garcia</p>
+							<p>Self-help book</p>
+							<p>"Fall seven times, rise eight.  — Japanese proverb"</p>
+							<p>208</p>
+						</div>
+						<div class="read">
+							<input type="checkbox" checked="">
+							<label>Read</label>
+						</div>
+					</div></div>
+					<div class="card" style="background-image: url(assets/mindset.jpg);"><div class="book-details">
+						<div>
+							<p>Mindset</p>
+							<p>Carol S. Dweck, Ph.D.</p>
+							<p>Self-help book</p>
+							<p>"The view you adopt for yourself profoundly affects the way you live your life."</p>
+							<p>320</p>
+						</div>
+						<div class="read">
+							<input type="checkbox" checked="">
+							<label>Read</label>
+						</div>
+					</div></div>
+					<div class="card" style="background-image: url(assets/the\ dip.jpg);"><div class="book-details">
+						<div>
+							<p>The Dip</p>
+							<p>Seth Godin</p>
+							<p>Self-help book</p>
+							<p>"Winners quit fast, quit often, and quit without guilt"</p>
+							<p>96</p>
+						</div>
+						<div class="read">
+							<input type="checkbox" checked="">
+							<label>Read</label>
+						</div>
+					</div></div>
+					<div class="card" style="background-image: url(assets/onething.jpg);"><div class="book-details">
+						<div>
+							<p>The One Thing</p>
+							<p>Gary W. Keller and Jay Papasan</p>
+							<p>Self-help book</p>
+							<p>"Until my ONE Thing is done — everything else is a distraction."</p>
+							<p>240</p>
+						</div>
+						<div class="read">
+							<input type="checkbox" checked="">
+							<label>Read</label>
+						</div>
+					</div></div>
+					<div class="card" style="background-image: url(assets/the-power-of-now.jpg);"><div class="book-details">
+						<div>
+							<p>The Power of Now</p>
+							<p>Eckhart Tolle</p>
+							<p>Self-help book</p>
+							<p>"What a caterpillar calls the end of the world we call a butterfly."</p>
+							<p>236</p>
+						</div>
+						<div class="read">
+							<input type="checkbox" checked="">
+							<label>Read</label>
+						</div>
+					</div></div>
+					<div class="card" style="background-image: url(assets/essentialism.jpg);"><div class="book-details">
+						<div>
+							<p>Essentialism</p>
+							<p>Greg McKeown</p>
+							<p>Self-help book</p>
+							<p>"Remember that if you don’t prioritize your life someone else will."</p>
+							<p>288</p>
+						</div>
+						<div class="read">
+							<input type="checkbox" checked="">
+							<label>Read</label>
+						</div>
+					</div></div>
+					<div class="card" style="background-image: url(assets/big-magic.jpg);"><div class="book-details">
+						<div>
+							<p>Big Magic</p>
+							<p>Elizabeth Gilbert</p>
+							<p>Self-help book</p>
+							<p>"Own your disappointment, acknowledge it for what it is, and move on."</p>
+							<p>304</p>
+						</div>
+						<div class="read">
+							<input type="checkbox" checked="">
+							<label>Read</label>
+						</div>
+					</div></div>
+					<div class="card" style="background-image: url(assets/the-subtle-art-of-not-giving-a-f-ck.jpg)"><div class="book-details">
+						<div>
+							<p>The Subtle Art of Not Giving a F*ck</p>
+							<p>Mark Manson</p>
+							<p>Self-help book</p>
+							<p>"Who you are is defined by what you’re willing to struggle for."</p>
+							<p>229</p>
+						</div>
+						<div class="read">
+							<input type="checkbox" checked="">
+							<label>Read</label>
+						</div>
+					</div></div>
+					<div class="card" style="background-image: url(assets/everything.jpg);"><div class="book-details">
+						<div>
+							<p>Everything Is F*cked</p>
+							<p>Mark Manson</p>
+							<p>Self-help book</p>
+							<p>"Freedom itself demands discomfort."</p>
+							<p>288</p>
+						</div>
+						<div class="read">
+							<input type="checkbox" checked="">
+							<label>Read</label>
+						</div>
+					</div></div>
+					<div class="card" style="background-image: url(assets/zero-to-one.jpg);"><div class="book-details">
+						<div>
+							<p>Zero to One</p>
+							<p>Peter Thiel with Blake Masters</p>
+							<p>Self-help book for entrepreneurs</p>
+							<p>"moving first is a tactic, not a goal"</p>
+							<p>224</p>
+						</div>
+						<div class="read">
+							<input type="checkbox" checked="">
+							<label>Read</label>
+						</div>
+					</div></div>
+					<div class="card" style="background-image: url(assets/the-48-laws-of-power.jpg);"><div class="book-details">
+						<div>
+							<p>The 48 Laws of Power</p>
+							<p>Robert Greene</p>
+							<p>Self-help book</p>
+							<p>"Strike the shepherd and the sheep will scatter."</p>
+							<p>452</p>
+						</div>
+						<div class="read">
+							<input type="checkbox" checked="">
+							<label>Read</label>
+						</div>
+					</div></div>
+					<div class="card" style="background-image: url(assets/steal-like-an-artist.jpg);"><div class="book-details">
+						<div>
+							<p>Steal Like an Artist</p>
+							<p>Austin Kleon</p>
+							<p>Self-help book</p>
+							<p>"Creative people need time to just sit around and do nothing."</p>
+							<p>160</p>
+						</div>
+						<div class="read">
+							<input type="checkbox" checked="">
+							<label>Read</label>
+						</div>
+					</div></div>
+					<div class="card" style="background-image: url(assets/101.jpg);"><div class="book-details">
+						<div>
+							<p>101 Essays That Will Change The Way You Think</p>
+							<p>Brianna Wiest</p>
+							<p>Self-help book</p>
+							<p>"An untamed mind is a minefield."</p>
+							<p>448</p>
+						</div>
+						<div class="read">
+							<input type="checkbox" checked="">
+							<label>Read</label>
+						</div>
+					</div></div>
+					<div class="card" style="background-image: url(assets/heal.jpg);"><div class="book-details">
+						<div>
+							<p>When You're Ready, This Is How You Heal</p>
+							<p>Brianna Wiest</p>
+							<p>Self-help book</p>
+							<p>"I am entitled to my own idea of myself."</p>
+							<p>280</p>
+						</div>
+						<div class="read">
+							<input type="checkbox" checked="">
+							<label>Read</label>
+						</div>
+					</div></div>
+					<div class="card" style="background-image: url(assets/7.jpg);"><div class="book-details">
+						<div>
+							<p>The 7 Habits of Highly Effective People</p>
+							<p>Stephen Covey</p>
+							<p>Self-help book</p>
+							<p>"Start with the end in mind."</p>
+							<p>381</p>
+						</div>
+						<div class="read">
+							<input type="checkbox" checked="">
+							<label>Read</label>
+						</div>
+					</div></div>
+					<div class="card" style="background-image: url(assets/rich-dad-poor-dad.jpg);"><div class="book-details">
+						<div>
+							<p>Rich Dad Poor Dad</p>
+							<p>Robert T. Kiyosaki</p>
+							<p>Personal finance</p>
+							<p>"To know a little about a lot."</p>
+							<p>336</p>
+						</div>
+						<div class="read">
+							<input type="checkbox" checked="">
+							<label>Read</label>
+						</div>
+					</div></div>
+					<div class="card" style="background-image: url(assets/think.png);"><div class="book-details">
+						<div>
+							<p>Think and Grow Rich</p>
+							<p>Napolean Hill</p>
+							<p>Personal Development</p>
+							<p>"The way of success is the way of continuous pursuit of knowledge."</p>
+							<p>320</p>
+						</div>
+						<div class="read">
+							<input type="checkbox" checked="">
+							<label>Read</label>
+						</div>
+					</div></div>
+					<div class="card" style="background-image: url(assets/tuesdays-with-morrie.jpg);"><div class="book-details">
+						<div>
+							<p>Tuesdays with Morrie</p>
+							<p>Mitch Albom</p>
+							<p>Memoirk</p>
+							<p>"Death ends a life, not a relationship."<p>
+							<p>192</p>
+						</div>
+						<div class="read">
+							<input type="checkbox" checked="">
+							<label>Read</label>
+						</div>
+					</div></div>
+					<div class="card" style="background-image: url(assets/simplify.jpg);"><div class="book-details">
+						<div>
+							<p>Simplify: And Live the Good Life</p>
+							<p>Bo Sánchez</p>
+							<p>Inspirational book</p>
+							<p>"Believe in your dreams, and they will believe in you."</p>
+							<p>168</p>
+						</div>
+						<div class="read">
+							<input type="checkbox" checked="">
+							<label>Read</label>
+						</div>
+					</div></div>
+					<div class="card" style="background-image: url(assets/gentle.jpg);"><div class="book-details">
+						<div>
+							<p>A Gentle Reminder</p>
+							<p>Bianca Sparacino</p>
+							<p>Poetry</p>
+							<p>"It is okay to outgrow those who don’t know how to love you."</p>
+							<p>154</p>
+						</div>
+						<div class="read">
+							<input type="checkbox" checked="">
+							<label>Read</label>
+						</div>
+					</div></div>
+					<div class="card" style="background-image: url(assets/scars.jpg);"><div class="book-details">
+						<div>
+							<p>The Strength in Our Scars</p>
+							<p>Bianca Sparacino</p>
+							<p>Poetry</p>
+							<p>"Do not be ashamed of what your survival looks like."</p>
+							<p>160</p>
+						</div>
+						<div class="read">
+							<input type="checkbox" checked="">
+							<label>Read</label>
+						</div>
+					</div></div>
+					<div class="card" style="background-image: url(assets/honey.jpg);"><div class="book-details">
+						<div>
+							<p>milk and honey</p>
+							<p>Rupi Kaur</p>
+							<p>Poetry</p>
+							<p>"Loneliness is a sign you are in desperate need of yourself."</p>
+							<p>226</p>
+						</div>
+						<div class="read">
+							<input type="checkbox" checked="">
+							<label>Read</label>
+						</div>
+					</div></div>
+					<div class="card" style="background-image: url(assets/sun.jpg);"><div class="book-details">
+						<div>
+							<p>the sun and her flowers</p>
+							<p>Rupi Kaur</p>
+							<p>Poetry, Fiction, and Novel</p>
+							<p>"Loneliness is a sign you are in desperate need of yourself."</p>
+							<p>256</p>
+						</div>
+						<div class="read">
+							<input type="checkbox" checked="">
+							<label>Read</label>
+						</div>
+					</div></div>
+					<div class="card" style="background-image: url(assets/home.jpg);"><div class="book-details">
+						<div>
+							<p>home body</p>
+							<p>Rupi Kaur</p>
+							<p>Poetry</p>
+							<p>"there are years in me
+								that have not slept."</p>
+							<p>192</p>
+						</div>
+						<div class="read">
+							<input type="checkbox" checked="">
+							<label>Read</label>
+						</div>
+					</div></div>
+				</div>
+			</div>
+		</section>
+		<div class="modal">
+			<form>
+				<div class="close-modal" id="close-modal">
+					<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 18 18"><title>circle-info</title><g fill="#06413d"><path d="M9,1C4.589,1,1,4.589,1,9s3.589,8,8,8,8-3.589,8-8S13.411,1,9,1Zm.75,11.819c0,.414-.336,.75-.75,.75s-.75-.336-.75-.75v-4.569c0-.414,.336-.75,.75-.75s.75,.336,.75,.75v4.569Zm-.75-6.069c-.552,0-1-.449-1-1s.448-1,1-1,1,.449,1,1-.448,1-1,1Z" fill="#06413d"></path></g></svg>
+				</div>
+				<h2>Collection</h2>
+				<div class="row">
+					<label for="title">Title:</label>
+					<input id="title" type="text" name="title" required>
+				</div>
+				<div class="row">
+					<label for="author">Author:</label>
+					<input id="author" type="text" name="author" required>
+				</div>
+				<div class="row">
+					<label for="genre">Genre:</label>
+					<input id="genre" type="text" name="genre" required>
+				</div>
+				<div class="row">
+					<label for="quote">Favorite Quote:</label>
+					<input id="quote" type="text" name="quote" required>
+				</div>
+				<div class="row">
+					<label for="pages">Pages:</label>
+					<input id="pages" type="number" min="1" max="1024" name="pages" required>
+				</div>
+				<div class="row">
+					<label for="img-url">Image URL:</label>
+					<input id="img-url" type="text" name="imgURL" placeholder="Add a cover of the book">
+				</div>
+				<div class="row">
+					<div>
+						<input id="read" type="checkbox">
+						<label for="read">Have Read</label>
+					</div>
+				</div>
+				<div class="row">
+					<button type="submit">Add</button>
+				</div>
+			</form>
+		</div>
+		<script src="script.js"></script>
+	</body>
+</html>
